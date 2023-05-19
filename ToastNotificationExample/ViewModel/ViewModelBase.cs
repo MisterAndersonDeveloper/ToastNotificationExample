@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ToastNotificationExample.ViewModel
+namespace AppNotificationExample.ViewModel
 {
     public abstract class ViewModelBase : INotifyPropertyChanged
     {

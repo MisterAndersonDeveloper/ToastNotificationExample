@@ -1,4 +1,4 @@
-﻿namespace ToastNotificationLibrary
+﻿namespace AppNotificationLibrary
 {
     public static class NotificationResults
     {

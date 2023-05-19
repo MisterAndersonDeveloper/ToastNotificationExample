@@ -1,8 +1,8 @@
 ﻿using System.Windows;
-using ToastNotificationExample.ViewModel;
-using ToastNotificationLibrary;
+using AppNotificationExample.ViewModel;
+using AppNotificationLibrary;
 
-namespace ToastNotificationExample
+namespace AppNotificationExample
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -23,7 +23,7 @@ namespace ToastNotificationExample
             };
 
             //SUBSCRIBE TOAST ACTIVATION
-            _activationHandler.SubsribeAction(NotificationResults.DEFAULT, _mainWindowViewModel.OnToastWasClicked);
+            _activationHandler.SubsribeAction(NotificationResults.DEFAULT, _mainWindowViewModel.OnNotificationWasClicked);
             _activationHandler.SubsribeAction(NotificationResults.LIKE, _mainWindowViewModel.OnLike);
             _activationHandler.SubsribeAction(NotificationResults.DISLIKE, _mainWindowViewModel.OnDislike);
             _activationHandler.SubsribeAction(NotificationResults.REPLY, _mainWindowViewModel.OnMessageWasRecieved);

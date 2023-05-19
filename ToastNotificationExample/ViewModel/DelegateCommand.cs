@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace ToastNotificationExample.ViewModel
+namespace AppNotificationExample.ViewModel
 {
     public class DelegateCommand : ICommand
     {

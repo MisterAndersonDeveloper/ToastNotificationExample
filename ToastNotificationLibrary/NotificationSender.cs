@@ -1,6 +1,6 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 
-namespace ToastNotificationLibrary
+namespace AppNotificationLibrary
 {
     public class NotificationSender
     {
@@ -15,7 +15,7 @@ namespace ToastNotificationLibrary
         }
         #endregion  
 
-        public void CheckToast()
+        public void CheckNotification()
         {
             new ToastContentBuilder()
                 .AddArgument("conversationId", 9813)
@@ -31,7 +31,7 @@ namespace ToastNotificationLibrary
                 .Show();
         }
 
-        public void ToastWithButtons()
+        public void NotificationWithButtons()
         {
             new ToastContentBuilder()
                 .AddArgument("conversationId", 9813)
@@ -47,7 +47,7 @@ namespace ToastNotificationLibrary
                 .Show();
         }
 
-        public void ToastWithTextInput()
+        public void NotificationWithTextInput()
         {
             new ToastContentBuilder()
                 .AddArgument("conversationId", 9813)

@@ -13,7 +13,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\ToastNotificationLibrary\ToastNotificationLibrary.csproj" />
+		<ProjectReference Include="..\ToastNotificationLibrary\NotificationLibrary.csproj" />
 	</ItemGroup>
 
 </Project>

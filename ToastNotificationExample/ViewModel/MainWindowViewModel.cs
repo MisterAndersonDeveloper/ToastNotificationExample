@@ -1,8 +1,7 @@
-﻿using System;
-using System.Windows;
-using ToastNotificationLibrary;
+﻿using System.Windows;
+using AppNotificationLibrary;
 
-namespace ToastNotificationExample.ViewModel
+namespace AppNotificationExample.ViewModel
 {
     internal class MainWindowViewModel : ViewModelBase
     {
@@ -26,23 +25,22 @@ namespace ToastNotificationExample.ViewModel
 
         //COMMAND FUNCTIONS
         private void RecieveMessageFunction(object obj) =>
-            NotificationSender.Instance.ToastWithTextInput();
+            NotificationSender.Instance.NotificationWithTextInput();
 
         private void SendNotificationWithButtonsFunction(object obj) =>
-            NotificationSender.Instance.ToastWithButtons();
+            NotificationSender.Instance.NotificationWithButtons();
 
         private void SendButtonFunction(object obj) =>
             NotificationSender.Instance.SendMessage(Message);
 
         private void CheckButtonFunction(object obj) =>
-            NotificationSender.Instance.CheckToast();
-
+            NotificationSender.Instance.CheckNotification();
 
         //NOTIFICATION HANDLERS
         public void OnMessageWasRecieved(object obj) =>
             Application.Current.Dispatcher.Invoke(() => MessageBox.Show(obj.ToString()));
 
-        public void OnToastWasClicked(object obj) =>
+        public void OnNotificationWasClicked(object obj) =>
             Application.Current.Dispatcher.Invoke(() => MessageBox.Show("You have just activated the notification."));
 
         public void OnLike(object obj) =>

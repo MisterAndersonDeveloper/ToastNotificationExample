@@ -1,6 +1,6 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 
-namespace ToastNotificationLibrary
+namespace AppNotificationLibrary
 {
     public class ActivationHandler
     {
