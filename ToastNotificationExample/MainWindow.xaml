@@ -1,0 +1,20 @@
+﻿<Window x:Class="ToastNotificationExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToastNotificationExample"
+        mc:Ignorable="d"
+        Title="Toast notification example" Height="300" Width="280" ResizeMode="NoResize">
+    <StackPanel>
+        <Label Content="Invoke toast notification" FontSize="20" FontWeight="Heavy"/>
+        <StackPanel Margin="50">
+            <Button x:Name="CheckButton" Content="Check toast" Command="{Binding CheckButtonCommand}" Margin="5"/>
+            <Label Content="Toast message" Padding="0" Margin="5,5,5,0"/>
+            <TextBox x:Name="MessageText" Text="{Binding Message}" Margin="5,0"/>
+            <Button x:Name="SendButton" Content="Send toast message" Command="{Binding SendButtonCommand}" Margin="5,0,5,5"/>
+            <Button x:Name="ButtonToastButton" Content="Send button toast" Command="{Binding SendNotificationWithButtonsCommand}" Margin="5"/>
+            <Button x:Name="TextInputToastButton" Content="Text input toast" Command="{Binding RecieveMessageCommand}" Margin="5"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
